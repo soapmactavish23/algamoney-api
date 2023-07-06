@@ -15,7 +15,7 @@ import com.hkprogrammer.algamoney.api.repository.CategoriaRepository;
 public class CategoriaResource {
 
 	@Autowired
-	private CategoriaRepository repository;
+	private CategoriaRepository repository; 
 	
 	@GetMapping
 	public List<Categoria> listar() {
