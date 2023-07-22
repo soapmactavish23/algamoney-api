@@ -44,7 +44,7 @@ public class CategoriaResource {
 		return ResponseEntity.created(uri).body(objSaved);
 	}
 	
-	@GetMapping("/{codigo}")
+	@GetMapping("/{codigo}") 
 	public Optional<Categoria> buscarPeloCodigo(@PathVariable Long codigo) {
 		return repository.findById(codigo);
 	}
